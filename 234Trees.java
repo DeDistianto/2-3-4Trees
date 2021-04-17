@@ -215,7 +215,7 @@ class Tree234                                   // Kelas Node, kumpulan Fungsi p
    private void recDisplayTree(Node thisNode, int level,
                                               int childNumber) //Fungsi Untuk Menampilkan hasil Tree
       {
-      System.out.print("level="+level+" child="+childNumber+" ");
+      System.out.print("Tingkat = "+level+"; Child = "+childNumber+" ");
       thisNode.displayNode();               
 
       int numItems = thisNode.getNumItems();
@@ -241,19 +241,21 @@ class Tree234App              //Main App Menjalankan Program
       double value;
       Tree234 theTree = new Tree234();   //Memanggil Fungsi" pada Class "Tree234"
 
-      theTree.insert(3);
-      theTree.insert(1);
-      theTree.insert(5);
-      theTree.insert(4);
-      theTree.insert(2);
-      theTree.insert(9);
-      theTree.insert(10);
+      // theTree.insert(3);
+      // theTree.insert(1);
+      // theTree.insert(5);
+      // theTree.insert(4);
+      // theTree.insert(2);
+      // theTree.insert(9);
+      // theTree.insert(10);
 
       while(true)                         //Selama True Program akan jalan Terus
          {
          putText("Pilihan : ");
          putText("\n");
-         putText("A. Show B. Insert C. Find ");
+         putText("A. Show\n");
+         putText("B. Insert\n");
+         putText("C. Find\n");
          putText("\n");
          putText("Masukan Pilihan : ");
          char choice = getChar();
